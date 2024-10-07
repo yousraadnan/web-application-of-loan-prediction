@@ -1,0 +1,77 @@
+/* Custom Navbar Styles */
+.navbar-custom {
+    background-color: #3B5360; /* Header background color */
+    position: relative; /* Ensure navbar is above the background */
+    z-index: 10; /* Higher z-index to stay above background */
+}
+
+.navbar-brand, .navbar-text {
+    color: #ffffff; /* White text for brand and contact info */
+}
+
+/* Button Styles */
+.btn-light {
+    color: #3B5360; /* Dark text color for buttons */
+    background-color: #ffffff; /* White background for buttons */
+    border: 2px solid #3B5360; /* Border color matches navbar */
+}
+
+.btn-light:hover {
+    background-color: #3B5360; /* Dark background on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Full Background Image Styles */
+.image-slider {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflow */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    text-align: center; /* Center text */
+}
+
+.moving-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images--k6t4bFud-transformed.jpeg'); /* Your background image */
+    background-size: cover; /* Ensure the image covers the whole area */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Keep the background fixed when scrolling */
+    animation: zoom 20s infinite alternate; /* Animation for zoom effect */
+    z-index: 1; /* Set a lower z-index for background */
+}
+
+/* Animation Keyframes */
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1); /* Zoom effect */
+    }
+}
+
+/* Overlay Content */
+.overlay-content {
+    position: relative;
+    z-index: 2; /* Ensure overlay content is above the background */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.overlay-content h1 {
+    color: #ffffff; /* White text */
+    font-size: 3rem; /* Increased font size for prominence */
+}
+
+.overlay-content p {
+    color: #dddddd; /* Light grey text */
+    font-size: 1.2rem; /* Slightly larger font size for readability */
+}
